@@ -1,0 +1,5 @@
+* prepare data / keep test cp
+keep if t_CP_ID=="ES_03" // cp
+drop if level_0==14	// Others
+drop if quantity < 0 // negative values 
+keep if rolling12 !=. // timeframe	
